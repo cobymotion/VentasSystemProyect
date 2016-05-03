@@ -15,7 +15,7 @@ namespace ControlVentasSystem.control
         public bool addProducto(DtoProducto producto)
         {
             string sql = 
-       "INSERT INTO cat_productos VALUES(@param1,@param2,@param3,@param4,@param5)";
+       "INSERT INTO cat_products VALUES(@param1,@param2,@param3,@param4,@param5)";
             List<MySqlParameter> parametros = 
                 new List<MySqlParameter>();
             parametros.Add(new MySqlParameter

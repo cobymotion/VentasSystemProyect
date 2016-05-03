@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CobyMysql</name>
+    </assembly>
+    <members>
+        <member name="T:CobyMysql.conection.AppConfigClass">
+            <summary>
+            Clase que permite configurar los valores en el archivo de configuracion 
+            </summary>
+        </member>
+        <member name="T:CobyMysql.conection.ManageConnection">
+            <summary>
+            Clase para el manejo de las conexiones con Mysql
+            Author: Cobymotion
+            </summary>
+        </member>
+        <member name="M:CobyMysql.conection.ManageConnection.#ctor">
+            <summary>
+            Permite inicializar de las configuraciones la cadena de conexion y genera una conexion nueva 
+            </summary>         
+        </member>
+        <member name="M:CobyMysql.conection.ManageConnection.openConexion">
+            <summary>
+            Valida que se abra la conexion y la mantiene abierta
+            </summary>
+        </member>
+        <member name="M:CobyMysql.conection.ManageConnection.closeConexion">
+            <summary>
+            Cierra la conexion que se vaya a generar. 
+            </summary>
+        </member>
+        <member name="M:CobyMysql.conection.ManageConnection.executeQueryUpdate(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+            <summary>
+            Metodo utilizado para ejecutar sentencias de SQL que tienen que ver con ingresar, 
+            modificar o borrar
+            </summary>
+            <param name="sentencia">Sentencia de SQL completa que se quiere ejecutar</param>
+            <param name="parametros">Numero de parametros que se necesitan para utilizar</param>
+            <returns>Regresa verdadero si no ocurre ninguna exception </returns>
+        </member>
+        <member name="M:CobyMysql.conection.ManageConnection.executeStoredProcedureUpdate(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+            <summary>
+            Metodo utilizado para ejecutar procedimientos almacenados de SQL que tienen que ver con ingresar, 
+            modificar o borrar
+            </summary>
+            <param name="sentencia">Sentencia de SQL completa que se quiere ejecutar</param>
+            <param name="parametros">Numero de parametros que se necesitan para utilizar</param>
+            <returns>Regresa verdadero si no ocurre ninguna exception </returns>
+        </member>
+        <member name="M:CobyMysql.conection.ManageConnection.buscaRegistroStoredProcedure(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+            <summary>
+            Metodo principal para acceso a la base de datos retorna un reader mediante un procedimiento almacenado
+            </summary>
+            <param name="sentencia"></param>
+            <param name="parametros"></param>
+            <returns>MysqlDataReader</returns>
+        </member>
+        <member name="M:CobyMysql.conection.ManageConnection.buscaRegistroSQL(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+            <summary>
+            Permite tener acceso a la base de datos mediante una sentencia SLQ y regresa un Reader con los datos
+            </summary>
+            <param name="sentencia"></param>
+            <param name="parametros"></param>
+            <returns>MysqlDataReader</returns>
+        </member>
+        <member name="M:CobyMysql.conection.ManageConnection.getListSentenciaSQL(System.String,System.Collections.Generic.List{MySql.Data.MySqlClient.MySqlParameter})">
+            <summary>
+            metodo que toma una sentencia SQL y la ejecuta para que pueda traer una tabla del dataset 
+            Lo utilizo para meterlo en los grid o en los combos       
+            </summary>
+            <param name="sentencia"></param>
+            <param name="parametros"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

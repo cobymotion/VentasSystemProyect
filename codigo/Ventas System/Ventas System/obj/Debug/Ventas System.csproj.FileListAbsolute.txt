@@ -1,1 +1,16 @@
 C:\Users\coby_\Desktop\Ventas System\Ventas System\bin\Debug\Ventas System.exe.config
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\bin\Debug\Ventas System.exe.config
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\bin\Debug\Ventas System.exe
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\bin\Debug\Ventas System.pdb
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\bin\Debug\CobyMysql.dll
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\bin\Debug\ControlVentasSystem.exe
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\bin\Debug\ControlVentasSystem.pdb
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\bin\Debug\CobyMysql.pdb
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\bin\Debug\CobyMysql.xml
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\obj\Debug\Ventas System.csprojResolveAssemblyReference.cache
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\obj\Debug\Ventas_System.catalogos.FrmAddProductos.resources
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\obj\Debug\Ventas_System.Form1.resources
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\obj\Debug\Ventas_System.Properties.Resources.resources
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\obj\Debug\Ventas System.csproj.GenerateResource.Cache
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\obj\Debug\Ventas System.exe
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\obj\Debug\Ventas System.pdb

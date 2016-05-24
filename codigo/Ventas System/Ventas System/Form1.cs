@@ -18,15 +18,17 @@ namespace Ventas_System
             InitializeComponent();
         }
 
-        /// <summary>
-        /// Que este boton solo sirve para mandar llamar la otra ventana
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void button1_Click(object sender, EventArgs e)
+        
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FrmAddProductos frmAddProducto = new FrmAddProductos();
-            frmAddProducto.ShowDialog();
+            FrmProductos frmProducto = new FrmProductos();
+            frmProducto.ShowDialog();
+        }
+
+        private void btnProductos_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmProductos frmProducto = new FrmProductos();
+            frmProducto.ShowDialog();
         }
     }
 }

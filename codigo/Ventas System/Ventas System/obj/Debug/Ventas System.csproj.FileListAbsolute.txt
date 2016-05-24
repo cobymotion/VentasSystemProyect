@@ -14,3 +14,5 @@ C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\obj\De
 C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\obj\Debug\Ventas System.csproj.GenerateResource.Cache
 C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\obj\Debug\Ventas System.exe
 C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\obj\Debug\Ventas System.pdb
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\obj\Debug\Ventas_System.catalogos.FrmProductos.resources
+C:\Users\coby_\Desktop\Practica ing sw\codigo\Ventas System\Ventas System\obj\Debug\Ventas System.exe.licenses

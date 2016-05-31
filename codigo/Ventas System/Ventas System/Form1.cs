@@ -21,14 +21,25 @@ namespace Ventas_System
         
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FrmProductos frmProducto = new FrmProductos();
-            frmProducto.ShowDialog();
+            if (frmProducto == null)
+                frmProducto = new FrmProductos();
+            if (frmProducto.IsDisposed)
+                frmProducto = new FrmProductos();
+            frmProducto.MdiParent = this;
+            frmProducto.BringToFront();
+            frmProducto.Show();
         }
 
+        FrmProductos frmProducto=null;
         private void btnProductos_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FrmProductos frmProducto = new FrmProductos();
-            frmProducto.ShowDialog();
+            if(frmProducto == null) 
+                   frmProducto = new FrmProductos();
+            if(frmProducto.IsDisposed)
+                frmProducto = new FrmProductos();
+            frmProducto.MdiParent = this;
+            frmProducto.BringToFront();
+            frmProducto.Show();
         }
     }
 }

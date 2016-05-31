@@ -18,7 +18,8 @@ namespace Ventas_System.catalogos
         {
             InitializeComponent();
         }
-        bool actualiza = false; DtoProducto producto; 
+        bool actualiza = false; 
+        DtoProducto producto; 
         public FrmAddProductos(DtoProducto producto) : this()
         {
             textEdit1.Enabled = false;

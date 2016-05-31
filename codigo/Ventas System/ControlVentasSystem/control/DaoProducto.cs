@@ -15,21 +15,22 @@ namespace ControlVentasSystem.control
     {
         public bool addProducto(DtoProducto producto)
         {
-            string sql = 
-       "INSERT INTO cat_productos VALUES(@param1,@param2,@param3,@param4,@param5)";
+           /* string sql = 
+       "INSERT INTO cat_productos VALUES(@param1,@param2,@param3,@param4,@param5)";*/
+            string sql = "registrar_producto";
             List<MySqlParameter> parametros = 
                 new List<MySqlParameter>();
             parametros.Add(new MySqlParameter
-                ("@param1",producto.IdcatProducto));
+                ("@pid",producto.IdcatProducto));
             parametros.Add(new MySqlParameter
-                ("@param2", producto.Nombre));
+                ("@pnombre", producto.Nombre));
             parametros.Add(new MySqlParameter
-                ("@param3", producto.CodigoBarras));
+                ("@pcodigobarras", producto.CodigoBarras));
             parametros.Add(new MySqlParameter
-                ("@param4", producto.Marca));
+                ("@pmarca", producto.Marca));
             parametros.Add(new MySqlParameter
-                ("@param5", producto.Precio));
-            bool res = executeQueryUpdate(sql,parametros);
+                ("@pprecio", producto.Precio));
+            bool res = executeStoredProcedureUpdate(sql,parametros);
             return res;
         }
 

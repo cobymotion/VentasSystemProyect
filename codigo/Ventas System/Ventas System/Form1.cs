@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Ventas_System.catalogos;
+using Ventas_System.procesos;
 
 namespace Ventas_System
 {
@@ -40,6 +41,12 @@ namespace Ventas_System
             frmProducto.MdiParent = this;
             frmProducto.BringToFront();
             frmProducto.Show();
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmVentas frventas = new FrmVentas();
+            frventas.ShowDialog();
         }
     }
 }

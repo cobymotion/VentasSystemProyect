@@ -66,5 +66,24 @@ namespace ControlVentasSystem.control
             bool res = executeQueryUpdate(sql, parametros);
             return res;
         }
+
+        public DtoProducto getProductoById(int id)
+        {
+            string sql = "SELECT * FROM cat_productos WHERE idcat_productos"
+                        +"=@pid";
+            List<MySqlParameter> parametros = new List<MySqlParameter>();
+            parametros.Add(new MySqlParameter("@pid", id));
+            MySqlDataReader reader = buscaRegistroSQL(sql, parametros);
+            DtoProducto producto = new DtoProducto(); 
+            if (reader.Read())
+            {
+                producto.IdcatProducto = reader.GetInt32("idcat_productos");
+                producto.Nombre = reader.GetString("nombre");
+                producto.Precio = reader.GetDouble("precio");
+                reader.Close();
+                closeConexion();
+            }
+            return producto;
+        }
     }
 }
